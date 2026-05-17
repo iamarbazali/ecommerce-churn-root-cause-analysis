@@ -1,0 +1,143 @@
+
+**Problem Defintion**
+
+# Q. What does "churn" mean in this business context(A customer who cancelled their subscription or stopped ordering)
+
+ans- In such a situation the following two can be the reason:
+1. Voluntary churn: where a customer has stopped their subscription or stopped ordering becuase of dissatisfaction or
+bad experience or a competitior offering a better offering.
+
+2. Involuntary churn: when a customer stopped ordering or subscription due to payment failure or delivery issue or some other 
+factor not necessarily voluntary.
+
+# Q. What is the cost of churn? (Lost recurring revenue, higher CAC to replace them)
+
+ans- The cost of churn is bigger than most beginners realize. It has three layers, and understanding all three is what makes 
+your recommendation credible to leadership.
+
+* Layer 1: Lost Recurring Revenue
+Every churned customer takes their future orders with them. If the average customer spends ₹500 per month and 100 customers churn,
+that is ₹50,000 in monthly revenue gone. This is the number most people stop at, but it is only the starting point.
+
+* Layer 2: Lost Upsell Opportunity
+An existing customer has a 65% probability of being upsold a higher-value product. A new prospect has only a 13% chance. So every 
+churned customer also kills a future upsell opportunity the business was likely to close. That number needs to go into your cost 
+estimate.
+
+* Layer 3: Customer Acquisition Cost (CAC)
+This is the most painful layer. The business now has to spend money to replace the customer it already had. Studies show it costs 
+5x more to acquire a new customer than to retain an existing one. So if churn jumped from 8% to 14% in your dataset, the business 
+is not just losing revenue; it is being forced to spend significantly more on marketing and sales just to stay flat.
+
+# Q. What would a useful answer look like? (A specfic segment + a speci c cause + one action)
+ans: A useful answer has three parts.
+
+A specific segment.
+A specific cause.
+One action.
+
+So your answer should sound like this:
+Older customers in Germany with low tenure and no active membership are the highest risk segment. Their churn is linked to low engagement and product usage. The bank 
+should launch a retention offer for inactive customers in Germany within their first 6 months.
+
+***Hypothesis*** 
+
+1. Customers  with low tenure + low satisfaction have a higher chance of getting churned
+    Why test: short relationship and poor experience together point to onboarding or product fit problems.
+    Metrics to check: churn rate, median tenure, average satisfaction, complaint rate, day since last order.
+
+    Primary metric - Churn rate 
+    Secondary metric - Median tenure for segment, Avg satisfaction score, segment size
+    Support metric - complaint rate, days since last order, order count, coupon used
+
+2. Customers with low app hourse + low satisfaction are more likely to churn
+    Why test: low engagement combined with low satisfaction points to poor app experience or irrelevant content.
+    Metrics to check: churn rate, hour spend on app, satisfaction score, day since last order, prefered order category.
+
+    Primary metric - churn rate
+    Secondary metric - Avg hours spend on app, median satisfation score, segent engagement rate
+    Support metric - days since last orfer, preferred order category, complaint rate, order count
+
+3. Customers with low tenure + low order count are likely to churn
+    Why test: new customers who never convert to repeat buyers likely face value or trust issues.
+    Metrics to check: churn rate, order count distribution, coupon used, order amount hike from last year, day since last order.
+
+    Primary metric - Churn rate
+    Secondary metric - Distribution of order count (mean, median), segment repeat rate, coupon usuage rate
+    Support metric - order amount hike from last year, days sine last order, Avg orders value
+
+4. Customers with high device count + low satisfaction are more likely to churn
+    Why test: many registered devices plus low satisfaction suggests cross‑device UX or fraud/notification problems.
+    Metrics to check: churn rate, number of devices, satisfaction score, preferred login device, complaint rate.
+
+    Primary metric - Churn rate 
+    Secondary metric - Avg numbers of registered revices, avg satisfacition score, share of segment using multiple login devices
+    Support metric -preferred login device distribution, complaint rate, hours spend on app
+
+5. Customers with high days since last order + low order count
+    Why test: customers who rarely order and have long inactivity windows likely churn from attrition not price.
+    Metrics to check: churn rate, day since last order, order count, cashback amount, coupon used.
+
+    Primary metric - Churn rate
+    Secondary metric - median days since last order, Avg order count, segment inactivity share
+    Support metric - cashback amount, coupon used, order amount hike from last year.
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
