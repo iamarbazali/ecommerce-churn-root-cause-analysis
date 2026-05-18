@@ -1,72 +1,97 @@
 # Ecommerce Churn Root Cause Analysis
 
-A business analytics project investigating why monthly churn jumped from 8% to 14% in one quarter for a subscription e-commerce company.
+A business analytics project to explain why churn changed and which customer segment is most at risk in a subscription e-commerce business.
 
-This is not a dashboard project. The output is a single data-backed recommendation to leadership, built through structured hypothesis testing, statistical validation, and customer segmentation.
+# Project Summary
 
----
+This project studies churn in a Kaggle e-commerce customer dataset with about 5,600 rows and 20 columns. The goal is not to build a dashboard. The goal is to find the main churn drivers, test them with data, and turn them into one clear recommendation for leadership.
 
-## Project Structure
+# Business Problem
 
-| Phase | Task | Status |
-|-------|------|--------|
-| Phase 1 | Business thinking and hypothesis writing | Done |
-| Phase 2 | Data cleaning and EDA | In Progress |
-| Phase 3 | Statistical testing and logistic regression | Pending |
-| Phase 4 | K-Means clustering and segment profiling | Pending |
-| Phase 5 | Recommendation writing and presentation | Pending |
+The business saw churn rise in one quarter. The main question was not only what changed, but why it changed and what action the business should take next.
 
----
+# Core business goal:
+Identify the highest risk customer segment and recommend one focused retention action.
 
-## Business Problem
+# What I found
 
-**Churn rate:** 8% to 14% in one quarter  
-**Dataset:** E-Commerce Customer Churn (Kaggle, ~5,600 rows, 20 columns)  
-**Goal:** Identify the root cause segment and propose one targeted retention action
+The data does not support a strong Q3 churn spike in the cleaned dataset. Churn is more strongly linked to customer experience signals.
 
----
+Strongest churn signals found so far:
+- Customers who complained churned more.
+- Customers with lower satisfaction churned more.
+- Customers in higher city tiers showed higher churn.
+- Some missing value patterns also carried churn signal, especially in columns tied to usage and customer behavior.
 
-## Phase 1: Business Thinking
+What this means:
+- The main churn driver is not quarter alone.
+- The likely root issue is customer experience quality.
+- Service friction, complaints, and low satisfaction appear more important than calendar timing.
 
-Before writing any code, three core questions were answered:
+# Analysis approach
 
-1. **What is churn here?** A customer who stopped ordering or cancelled their subscription, either voluntarily (dissatisfaction, competitor) or involuntarily (payment failure, delivery issue).
+Phase 1. Business thinking
+- Defined churn in business terms.
+- Estimated churn cost.
+- Wrote five hypotheses before looking at the data.
 
-2. **What does churn cost?** Three layers: lost recurring revenue, lost upsell probability (existing customers convert at 65% vs 13% for new prospects), and increased CAC since replacing a customer costs 5x more than retaining one.
+Phase 2. Data cleaning and EDA
+- Checked missing values.
+- Handled missing numeric values with multiple imputation.
+- Added missingness flags.
+- Compared churn across imputed versions to test stability.
 
-3. **What does a useful answer look like?** A specific segment + a specific cause + one action.
+Phase 3. Segment and driver analysis
+- Compared churn by complaint, satisfaction, city tier, and missingness signals.
+- Checked churn by quarter.
+- Tested whether the quarter spike really existed in the cleaned data.
 
----
+# Current conclusion
 
-## Hypotheses
+Based on the data explored so far, churn appears to be driven more by customer experience than by quarter timing.
 
-Five hypotheses written before any data exploration to avoid fishing for random correlations:
+Most important patterns:
+- Complaint rate is much higher among churned customers.
+- Lower satisfaction aligns with higher churn.
+- City tier differences also matter.
+- Missing values in selected behavioral columns may signal hidden churn risk.
 
-1. Customers with low tenure + low satisfaction have a higher churn rate
-2. Customers with low app hours + low satisfaction are more likely to churn
-3. Customers with low tenure + low order count are likely to churn
-4. Customers with high device count + low satisfaction are more likely to churn
-5. Customers with high days since last order + low order count are likely to churn
+# Business recommendation
 
-Each hypothesis includes a primary metric, secondary metrics, and support metrics defined upfront.
+Focus retention on customers showing poor experience signals.
 
----
+# Recommended action:
+Build a targeted retention workflow for customers who complain, show low satisfaction, or have weak engagement signals such as low order activity or long gaps since last order.
 
-## Tools
+# Why this matters:
+- These customers are more likely to churn.
+- They are easier to intervene on than broad quarter based segments.
+- A focused action is more practical than a broad churn campaign.
 
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
+# Project status
+
+- Phase 1, Business thinking and hypothesis writing, Done
+- Phase 2, Data cleaning and EDA, In Progress
+- Phase 3, Statistical testing and logistic regression, Pending
+- Phase 4, K Means clustering and segment profiling, Pending
+- Phase 5, Recommendation writing and presentation, Pending
+
+# Tech stack
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit learn
 - Jupyter Notebook
 
----
+# Files in this repo
 
-## Files
+- problem_definition.txt, business context and hypotheses
+- root_cause.ipynb, analysis notebook
+- E-Commerce-Dataset.xlsx, source data
 
-- `problem_definition.txt` — Business context, cost of churn, and 5 hypotheses with metrics
-- `root_cause.ipynb` — Analysis notebook (updated progressively)
-- `E-Commerce-Dataset.xlsx` — Source dataset
+# Portfolio summary
 
----
-
-## Portfolio Note
-
-Project description: *Identified the highest-risk churn segment in a subscription e-commerce dataset using statistical testing, logistic regression, and K-Means clustering. Proposed a targeted retention intervention based on root cause analysis, not descriptive stats.*
+Identified the main churn drivers in a subscription e-commerce dataset using structured hypothesis testing, missing value analysis, and customer segmentation. The analysis shows that churn is more closely tied to customer experience than to quarter timing, and points to a targeted retention action for at risk customers.
