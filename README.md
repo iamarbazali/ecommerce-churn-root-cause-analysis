@@ -71,8 +71,8 @@ Build a targeted retention workflow for customers who complain, show low satisfa
 # Project status
 
 - Phase 1, Business thinking and hypothesis writing, Done
-- Phase 2, Data cleaning and EDA, In Progress
-- Phase 3, Statistical testing and logistic regression, Pending
+- Phase 2, Data cleaning and EDA, Done
+- Phase 3, Statistical testing and logistic regression, In Progress
 - Phase 4, K Means clustering and segment profiling, Pending
 - Phase 5, Recommendation writing and presentation, Pending
 
