@@ -74,7 +74,7 @@ Build a targeted retention workflow for customers who complain, show low satisfa
 - Phase 2, Data cleaning and EDA, Done
 - Phase 3, Statistical testing and logistic regression, Done
 - Phase 4, K Means clustering and segment profiling, Done
-- Phase 5, Recommendation writing and presentation, In Progress
+- Phase 5, Recommendation writing and presentation, Done
 
 # Tech stack
 
