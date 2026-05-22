@@ -1,0 +1,43 @@
+# Final Business Inference
+
+-- Cluster 0 is the main churn segment. It has the highest churn rate at 36 percent, the lowest satisfaction, the highest complaint rate, and low order depth.
+that means the business loses customers early, before they build habit and repeat purchase behavior. 
+
+
+# One Retention Action
+
+-- Launching a first 30 day onboarding and recovery program for cluster 0 as retention programs 
+work best when they target risk users early, use proactive engagement, and respond to friction fast.
+
+# Logic To use
+
+-- Trigger on low tenure and low satisfaction
+-- Add complain escalation 
+-- Send proactive support
+-- Follow up before the first long inactivity gap
+
+# Final Leadership Statement
+
+-- The main churn problem comes from new, dissatisfied customers with complaints and low repeat order 
+behavior. A targeted first 30 day retention program for Cluster 0 is the best action because it attacks the highest risk segment at the point where churn risk is strongest.
+
+## Phase 5 Conclusion
+
+    This project identified the main churn problem in a subscription ecommerce business and turned it into one clear retention action.
+
+    1. The analysis showed that churn is concentrated in early lifecycle customers. The strongest signals were low tenure, low satisfaction, complaint behavior, 
+    low order count, and longer gaps since the last order. The balanced logistic model also confirmed that the model should prioritize finding churned customers, even 
+    at the cost of some false alarms.
+
+    2. The cluster analysis gave the clearest business picture. Cluster 0 had the highest churn rate at 36 percent, the lowest satisfaction score, low order depth, 
+    and the highest complaint level. Cluster 1 was the loyal group with the lowest churn rate at 8 percent and the strongest engagement. Cluster 2 was the largest middle 
+    group with moderate risk.
+
+    3. The root cause is weak early customer experience. Customers who do not build habit, do not place repeat orders, and face complaints early are much more likely to 
+    churn. Tenure protects against churn, which means the business must win retention early, before customers drop off.
+
+    4. The best targeted action is a first 30 day onboarding and recovery program for Cluster 0. This should trigger for customers with low tenure and low satisfaction, 
+    add fast complaint resolution, and send a small incentive for the next order. The goal is to improve early experience and convert first time buyers into repeat customers.
+
+    5. Final leadership takeaway: the business should stop treating churn as a broad problem. It should focus on new, dissatisfied customers with complaints, because they 
+    represent the highest risk and the clearest retention opportunity.
